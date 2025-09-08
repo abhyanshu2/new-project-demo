@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitZone | Fitness Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">FitZone</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#workout">Workout</a></li>
+        <li><a href="#diet">Diet Plan</a></li>
+        <li><a href="#bmi">BMI Calc</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Your Fitness Journey Starts Here</h2>
+      <p>Stay Fit, Stay Healthy!</p>
+      <a href="#contact" class="btn">Join Now</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products">
+    <h2 class="section-title">Gym Products</h2>
+    <div class="product-container">
+      <div class="product-card">
+        <img src="gymp.jpeg" alt="Protein Powder">
+        <h3>Protein Powder</h3>
+        <p>₹2000</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="dumbleed.jpeg" alt="Dumbbell">
+        <h3>Dumbbell Set</h3>
+        <p>₹1500</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="rope.jpeg" alt="Skipping Rope">
+        <h3>Skipping Rope</h3>
+        <p>₹500</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workout Section -->
+  <section id="workout">
+    <h2 class="section-title">Workout Schedule</h2>
+    <table class="workout-table">
+      <tr><th>Day</th><th>Workout</th></tr>
+      <tr><td>Monday</td><td>Chest & Triceps</td></tr>
+      <tr><td>Tuesday</td><td>Back & Biceps</td></tr>
+      <tr><td>Wednesday</td><td>Legs & Cardio</td></tr>
+      <tr><td>Thursday</td><td>Shoulders & Abs</td></tr>
+      <tr><td>Friday</td><td>Core & Mobility</td></tr>
+      <tr><td>Saturday</td><td>Full Body & HIIT</td></tr>
+      <tr><td>Sunday</td><td>Rest / Stretching</td></tr>
+    </table>
+    <button id="download-pdf" class="btn">Download Plan (PDF)</button>
+  </section>
+
+  <!-- Diet Section -->
+  <section id="diet">
+    <h2 class="section-title">Diet Plans</h2>
+    <div class="diet-container">
+      <div class="diet-card">
+        <h3>Weight Loss</h3>
+        <p class="short">Low carbs, High protein, Green Tea</p>
+        <p class="more">Oats, Chicken breast, Veggies, Fruits, Water intake.</p>
+        <button class="toggle-btn">Read More</button>
+      </div>
+      <div class="diet-card">
+        <h3>Weight Gain</h3>
+        <p class="short">High calorie meals, Protein shakes, Nuts</p>
+        <p class="more">Rice, Peanut butter, Whole milk, Red meat, Eggs.</p>
+        <button class="toggle-btn">Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BMI Calculator -->
+  <section id="bmi">
+    <h2 class="section-title">BMI Calculator</h2>
+    <div class="bmi-box">
+      <input type="number" id="weight" placeholder="Weight (kg)">
+      <input type="number" id="height" placeholder="Height (cm)">
+      <button id="calc-bmi" class="btn">Calculate</button>
+      <p id="bmi-result"></p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Write your message..." required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">Instagram</a> | <a href="#">YouTube</a> | <a href="#">Twitter</a>
+    </div>
+    <p>© 2025 FitZone | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
